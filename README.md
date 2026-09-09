@@ -345,6 +345,22 @@ Omafiles enforces strict automated quality and performance gates before every re
 
 Stable Release (`v1.2.0`) — ready for production use.
 
+## Credits & Contributors
+
+- **Josema ([Percius04](https://github.com/Percius04))** — Original author and maintainer.
+- **[Flaxenox](https://github.com/Flaxenox)** — Collaborator and contributor:
+  - Startup crash fix (use-after-free via `Qt::SingleShotConnection` in `main.cpp`).
+  - Terminal-only application launching (`Terminal=true` wrapping for nvim, vim, etc.).
+  - XDG `[Removed Associations]` parsing to prevent ghost/duplicate application entries.
+  - GVfs network mount stability fixes (URI unmounting, `GMountOperation` lifecycle, `sftp://` scheme mapping, and remote `homePath` resolution).
+  - Background-pane tab state preservation (`Object.assign` in `TabOps.qml`).
+  - Preview panel stale text cleanup upon directory navigation.
+  - Context menu overhaul (flyout submenus, screen-height capping, Flickable scrollbars).
+  - Sidebar and file list proportional scrollbars and overflow prevention.
+  - Unified `PropertiesDialog.qml` merging metadata and permissions (chmod).
+  - Mouse back/forward button history navigation.
+  - `--new-window` command-line flag.
+
 ## License
 
 MIT — see [LICENSE](LICENSE).
